@@ -1,0 +1,73 @@
+/*selector, atributo, valor*/
+
+/*selección universal*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*selección por tagname*/
+body{
+    background-color:#333;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+/*selección por id*/
+#main-title{
+    text-decoration: underline;
+}
+
+/*selección por clase*/
+.text-lightblue{
+    color:lightblue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@keyframes bg-animation{
+    0%{
+        filter:grayscale(0%);
+    }
+
+    50%{
+        filter:grayscale(100%);
+    }
+
+    100%{
+        filter:grayscale(0%)
+    }
+}
+
+
+.full-height{
+    height:100vh;
+}
+
+.nav-img{
+    width:100%;
+    border:1px solid red;
+}
+
+.bring-to-front{
+    z-index:9999;
+}
+
+.nav-img::after{
+    content:"";
+    width:100%;
+    padding-top:100%;
+    display:block;
+    background-image: url('../img/card-picture.png');
+    background-size: cover;
+}
+
+#home{
+    background-image: url('../img/body-bg.png');
+    background-size:cover;
+    animation:bg-animation 5s infinite;
+}

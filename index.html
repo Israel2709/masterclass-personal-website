@@ -1,0 +1,85 @@
+<!--indica el tipo de documento ( html ) -->
+<!DOCTYPE html>
+
+<!--Declara el cuerpo de mi documento-->
+<html lang="en">
+
+<!--la cabeza de mi documento-->
+
+<head>
+    <!--define el set de caracteres a usar-->
+    <meta charset="UTF-8">
+    <!--Activar la responsividad en mi página-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Agregar un título a mi documento-->
+    <title>Mi página personal</title>
+    <!-- Agregamos los estilos de bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--el cuerpo de mi documento-->
+
+<body data-spy="scroll" data-target=".nav">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-2 d-flex align-items-center full-height position-fixed bring-to-front">
+                <div class="nav w-100">
+                    <div class="nav-img"></div>
+                    <div class="nav-body px-3 w-100 bg-white">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-right">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li class="list-group-item text-right"> 
+                                <a href="#resume">Currículum</a>
+                            </li>
+                            <li class="list-group-item text-right">
+                                <a href="#portfolio">Portafolio</a>
+                            </li>
+                            <li class="list-group-item text-right">
+                                <a href="#contact">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="home" class="row full-height">
+            <div class="col-12 col-md-10 offset-md-2 d-flex flex-column justify-content-center">
+                <h1>Mi nombre</h1>
+                <h2>Mi ocupación</h2>
+            </div>
+        </div>
+        <div id="resume" class="row full-height bg-primary">
+            <div class="col-12 col-md-10 offset-md-2 d-flex">
+                <h1>curriculum</h1>
+            </div>
+        </div>
+        <div id="portfolio" class="row full-height bg-success">
+            <div class="col-12 col-md-10 offset-md-2 d-flex">
+                <h1>portafolio</h1>
+            </div>
+        </div>
+        <div id="contact" class="row full-height bg-warning">
+            <div class="col-12 col-md-10 offset-md-2 d-flex">
+                <h1>contacto</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Agregamos los scripts de bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
